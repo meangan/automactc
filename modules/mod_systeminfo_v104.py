@@ -52,7 +52,7 @@ log = logging.getLogger(_modName)
 _headers = ['local_hostname', 'computer_name', 'hostname', 'model',
             'product_version', 'product_build_version', 'serial_no', 'volume_created',
             'system_tz', 'amtc_runtime', 'ipaddress', 'fvde_status','gatekeeper_status',
-            'sip_status', 'filevault_status']
+            'sip_status']
 
 
 def module():
