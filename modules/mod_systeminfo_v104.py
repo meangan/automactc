@@ -102,7 +102,6 @@ def module():
         record['system_tz'] = tz.rstrip().replace('Time Zone: ', '')
 
         _fdestatus, e = subprocess.Popen(["fdesetup", "status"], stdout=subprocess.PIPE).communicate()
-        log.debug(_fdestatus)
         if 'On' in _fdestatus:
             record['fvde_status'] = "On"
         else:
